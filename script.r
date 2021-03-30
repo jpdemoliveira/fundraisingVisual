@@ -11,7 +11,7 @@ libraryRequireInstall("hrbrthemes")
 ################### Actual code ####################
  # The dataset is provided in the gapminder library
  
- Values$CloseTDdate = as.Date(dataset$CloseTDdate)
+ Values$CloseTDdate = as.Date(Values$CloseTDdate)
  
  data = Values
  
