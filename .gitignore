@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/vscode,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=vscode,node
+# Created by https://www.toptal.com/developers/gitignore/api/vscode,visualstudiocode,node
+# Edit at https://www.toptal.com/developers/gitignore?templates=vscode,visualstudiocode,node
 
 ### Node ###
 # Logs
@@ -128,12 +128,19 @@ dist/
 tmp/
 temp/
 
-### vscode ###
+### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/vscode,node
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### vscode ###
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# End of https://www.toptal.com/developers/gitignore/api/vscode,visualstudiocode,node
