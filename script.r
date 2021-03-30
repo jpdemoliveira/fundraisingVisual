@@ -19,7 +19,7 @@ libraryRequireInstall("hrbrthemes")
 g = data %>%
    
    # prepare text for tooltip
-   mutate(text = paste("Name: ", Name, "\nValue: ", HighLowAvg, "Close Date/TD: ", CloseTDdate, sep="")) %>%
+   mutate(text = paste("Name: ", Name, "\nValue: ", HighLowAvg, "\nClose Date/TD: ", CloseTDdate, sep="")) %>%
    
    # Classic ggplot
    ggplot( aes(x=CloseTDdate, y=Priority, size = HighLowAvg, color = Priority, text=text)) +
@@ -31,6 +31,6 @@ g = data %>%
 ####################################################
 
 ############# Create and save widget ###############
-p = ggplotly(g, tooltip=text);
+p = ggplotly(g, tooltip="text");
 internalSaveWidget(p, 'out.html');
 ####################################################
